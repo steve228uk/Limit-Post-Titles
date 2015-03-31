@@ -116,6 +116,7 @@ class SR_Limit_Post_Titles {
 	 */
 	public function sanitize($input)
 	{
+		$input['limit'] = (int) $input['limit'];
 		return $input;
 	}
 
